@@ -34,5 +34,5 @@ jobs:
         run: |
           dateversion=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           echo $dateversion
-          pattern=$("{\\"version\\": \\"\${dateversion}\\",\\"lookupExtractorFactory\\":\")
+          pattern=$({"version":)
           echo $pattern
