@@ -36,7 +36,7 @@ jobs:
           echo $dateversion
           pattern="{\"version\": \"$dateversion\",\"lookupExtractorFactory\":"
           echo $pattern
-          sed -i 1s/^/$pattern/ error-reason-name.json
+          sed -i "1s/^/$pattern/" error-reason-name.json
           cat error-reason-name.json
           sed -i -e \$s/\$/}/ error-reason-name.json
           cat error-reason-name.json
