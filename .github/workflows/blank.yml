@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate Slack ID
         run: |
-          echo "OLOLO=$(${{ github.event.inputs.mention_user }} | rev | cut -c 1-11 | rev)" >> >> $GITHUB_ENV
+          echo "OLOLO=$(${{ github.event.inputs.mention_user }} | rev | cut -c 1-11 | rev)" >> $GITHUB_ENV
           echo ${{ github.event.inputs.mention_user }} | rev | cut -c 1-11 | rev 
 
       - name: Generate Slack ID
