@@ -25,4 +25,4 @@ jobs:
 
       - name: Generate Slack ID
         run: |
-          echo ${{ github.event.inputs.namespace }} | rev | cut -c 1-11 | rev
+          echo ${{ github.event.inputs.mention_user }} | rev | cut -c 1-11 | rev
