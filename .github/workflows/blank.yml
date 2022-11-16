@@ -30,4 +30,4 @@ jobs:
 
       - name: Generate Slack ID
         run: |
-          echo $OLOLO
+          echo ${{ env.OLOLO }}
