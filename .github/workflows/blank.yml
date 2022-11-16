@@ -8,7 +8,7 @@ on:
 
       mention_user:
         description: 'User:'
-        required: true
+        required: false
         type: choice
         options:
           - ''
